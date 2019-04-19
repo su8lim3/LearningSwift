@@ -38,12 +38,6 @@ class ViewController: UIViewController {
             myLabel.text = labelText
         }
         
-        if buttonCount >= 25 {
-            view.backgroundColor = UIColor.orange
-            let labelText = "Loook Madison, I hit it 25 times!"
-            myLabel.text = labelText
-        }
-        
     }
     
     override func viewDidLoad() {
