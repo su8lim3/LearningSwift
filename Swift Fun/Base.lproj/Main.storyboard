@@ -31,18 +31,42 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sz6-pI-MyH"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Llp-mB-7ub">
+                                <rect key="frame" x="157" y="384" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Ta8-kq-5Kq"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eju-9X-tYm">
+                                <rect key="frame" x="157" y="326" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="vbV-gY-L8t"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="uay-hv-7Co" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CHi-QI-klw"/>
+                            <constraint firstItem="gDV-bE-z9Z" firstAttribute="top" secondItem="Llp-mB-7ub" secondAttribute="bottom" constant="23.666666666666686" id="GKu-mn-u08"/>
+                            <constraint firstItem="Eju-9X-tYm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Otx-pv-5AH"/>
+                            <constraint firstItem="Llp-mB-7ub" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XxI-AI-yUy"/>
                             <constraint firstItem="uay-hv-7Co" firstAttribute="top" secondItem="gDV-bE-z9Z" secondAttribute="bottom" constant="17.333333333333314" id="aun-Xv-JXp"/>
                             <constraint firstItem="gDV-bE-z9Z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dpg-D1-qHD"/>
+                            <constraint firstItem="Llp-mB-7ub" firstAttribute="top" secondItem="Eju-9X-tYm" secondAttribute="bottom" constant="28" id="f8y-vE-l5e"/>
                             <constraint firstItem="gDV-bE-z9Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="seF-lI-Phl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="bottomTextField" destination="Llp-mB-7ub" id="4e4-wP-jrQ"/>
                         <outlet property="myLabel" destination="gDV-bE-z9Z" id="2BF-AL-gae"/>
+                        <outlet property="topTextField" destination="Eju-9X-tYm" id="r7z-yf-5J6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
