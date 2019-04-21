@@ -25,8 +25,8 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uay-hv-7Co">
-                                <rect key="frame" x="164" y="476" width="86" height="30"/>
-                                <state key="normal" title="Change Text"/>
+                                <rect key="frame" x="157.66666666666666" y="476" width="98.999999999999972" height="30"/>
+                                <state key="normal" title="Calcumulate!!!"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sz6-pI-MyH"/>
                                 </connections>
@@ -49,6 +49,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="djq-ng-Gmh">
+                                <rect key="frame" x="182.66666666666666" y="262" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -60,10 +63,13 @@
                             <constraint firstItem="gDV-bE-z9Z" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dpg-D1-qHD"/>
                             <constraint firstItem="Llp-mB-7ub" firstAttribute="top" secondItem="Eju-9X-tYm" secondAttribute="bottom" constant="28" id="f8y-vE-l5e"/>
                             <constraint firstItem="gDV-bE-z9Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="seF-lI-Phl"/>
+                            <constraint firstItem="Eju-9X-tYm" firstAttribute="top" secondItem="djq-ng-Gmh" secondAttribute="bottom" constant="33" id="u1m-nL-F4U"/>
+                            <constraint firstItem="djq-ng-Gmh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wGG-Ko-cyU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="additionSwitch" destination="djq-ng-Gmh" id="zfd-OG-gpN"/>
                         <outlet property="bottomTextField" destination="Llp-mB-7ub" id="4e4-wP-jrQ"/>
                         <outlet property="myLabel" destination="gDV-bE-z9Z" id="2BF-AL-gae"/>
                         <outlet property="topTextField" destination="Eju-9X-tYm" id="r7z-yf-5J6"/>
